@@ -8,7 +8,7 @@ import api.utilities.dataProviders;
 import io.restassured.response.Response;
 
 public class DataDrivenTest {
-//	@Test(priority = 1, dataProvider = "data",dataProviderClass = dataProviders.class)
+	@Test(priority = 1, dataProvider = "data",dataProviderClass = dataProviders.class)
 	public void createUsers(String userId,String userName, String fname, String lname, String email,String pwd, String phno) {
 		User userPayload = new User();
 		
